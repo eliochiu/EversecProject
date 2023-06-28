@@ -9,7 +9,7 @@
           <common-aside></common-aside>
         </el-aside>
         <el-main>
-          Main
+          <home-view></home-view>
         </el-main>
       </el-container>
     </el-container>
@@ -20,25 +20,27 @@
 /* eslint-disable */
 import CommonAside from "../components/CommonAside.vue"
 import CommonHeader from "../components/CommonHeader.vue"
+import HomeView from "./HomeView.vue";
 
 export default {
   components: {
     CommonAside,
-    CommonHeader
+    CommonHeader,
+    HomeView
   }
 
 }
 </script>
 
-<style>
+<style scoped>
 #main {
-  background-image: url("../assets/bg1.jpg");
+  background-image: url("../assets/image/bg1.jpg");
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
 
-.el-header,
-.el-footer {
+.el-header {
+  margin: 10px;
   color: #333;
   text-align: center;
   line-height: 60px;
@@ -53,7 +55,9 @@ export default {
 .el-main {
   padding: 0 !important;
   margin-top: 20px;
-  background-color: rgba(255, 255, 255, 0.5);
+  margin-right: 20px;
+  border: 2px solid #fff; 
+  border-radius: 10px 10px 0 0;
   color: #333;
   text-align: center;
   line-height: 160px;

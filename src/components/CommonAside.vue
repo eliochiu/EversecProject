@@ -1,7 +1,7 @@
 <template>
   <el-menu default-active="2" class="el-menu-vertical-demo" @open="handleOpen" @close="handleClose">
     <el-menu-item index="1" class="first-line">
-      <i class="el-icon-menu"></i>
+      <i class="el-icon-s-data"></i>
       <span slot="title">数据上报情况概览</span>
     </el-menu-item>
 
@@ -22,7 +22,7 @@
 
     <el-submenu index="5" class="multi-index">
       <template slot="title">
-        <i class="el-icon-location"></i>
+        <i class="el-icon-s-platform"></i>
         <span>设备监测统计</span>
       </template>
       <el-menu-item index="5-1">设备监测</el-menu-item>
