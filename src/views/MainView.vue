@@ -50,16 +50,17 @@ export default {
   color: #000;
   text-align: center;
   line-height: 200px;
+  margin: 10px 10px 0;
 }
 
 .el-main {
   padding: 0 !important;
-  margin-top: 20px;
-  margin-right: 20px;
+  margin-top: 40px;
+  margin-right: 30px;
   border-radius: 10px 10px 0 0;
+  background-color: #fff;
   color: #333;
   text-align: center;
-  line-height: 160px;
 }
 
 body>.el-container {

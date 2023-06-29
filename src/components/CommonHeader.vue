@@ -65,7 +65,8 @@ export default {
 
   .left-container {
     h1 {
-      font-size: 20px;
+      margin-top: 5px;
+      font-size: 24px;
       text-align: left;
       color: #fff;
       margin-right: 5px;
@@ -87,8 +88,8 @@ export default {
         color: #fff;
         border: none;
         padding: 0 10px;
-        height: 40px;
-        line-height: 40px;
+        height: 50px;
+        line-height: 50px;
         margin-top: 10px;
       }
 
@@ -102,6 +103,7 @@ export default {
     display: flex;
     width: 120px;
     height: 40px;
+    margin-top: 5px;
     justify-content: space-between;
 
     .demo-type {

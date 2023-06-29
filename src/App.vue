@@ -25,6 +25,10 @@ export default {
   color: #2c3e50;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 * {
   padding: 0;
   margin: 0;

@@ -58,7 +58,7 @@ export default {
   height: 100vh;
   border-right: none;
   border-radius: 10px 10px 0 0;
-  margin: 0 20px;
+  margin: 0 20px 0;
   /* margin-top: 20px; */
   color: #000;
 
