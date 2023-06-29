@@ -56,7 +56,6 @@ export default {
   padding: 0 !important;
   margin-top: 20px;
   margin-right: 20px;
-  border: 2px solid #fff; 
   border-radius: 10px 10px 0 0;
   color: #333;
   text-align: center;

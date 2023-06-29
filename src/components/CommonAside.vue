@@ -63,9 +63,9 @@ export default {
   color: #000;
 
   .el-menu-item {
-    height: 40px;
-    line-height: 40px;
-    font-size: 10px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 16px;
   }
 
   .first-line {
@@ -76,8 +76,8 @@ export default {
 
 <style>
 .el-submenu__title {
-  height: 40px !important;
-  line-height: 40px !important;
-  font-size: 10px !important;
+  height: 60px !important;
+  line-height: 60px !important;
+  font-size: 16px !important;
 }
 </style>

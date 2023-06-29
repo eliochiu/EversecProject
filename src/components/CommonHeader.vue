@@ -65,7 +65,7 @@ export default {
 
   .left-container {
     h1 {
-      font-size: 16px;
+      font-size: 20px;
       text-align: left;
       color: #fff;
       margin-right: 5px;
@@ -83,7 +83,7 @@ export default {
       justify-content: space-evenly;
 
       .el-menu-item {
-        font-size: 12px;
+        font-size: 16px;
         color: #fff;
         border: none;
         padding: 0 10px;
@@ -100,7 +100,7 @@ export default {
 
   .right-container {
     display: flex;
-    width: 100px;
+    width: 120px;
     height: 40px;
     justify-content: space-between;
 
@@ -110,7 +110,7 @@ export default {
 
     .el-dropdown-link  {
       color: #fff;
-      font-size: 12px;
+      font-size: 16px;
     }
 
 
