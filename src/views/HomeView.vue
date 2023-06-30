@@ -1,21 +1,15 @@
 <template>
-  <div class="home">
+  <div id="home">
     <el-container>
       <el-header>
-        筛选器
+        <main-header></main-header>
       </el-header>
       <el-container>
-        <el-aside width="500px">
-          <div class="card-title">
-            <div class="title">指令反馈列表</div>
-            <div class="number">共 {{ instructions.length }} 条</div>
-          </div>
-          <div class="card-body">
-            <common-card v-for="item in instructions" :key="item.id" :ins="item"></common-card>
-          </div>
+        <el-aside width="400px">
+          <main-aside></main-aside>
         </el-aside>
         <el-main>
-          详情
+          <main-detail></main-detail>
         </el-main>
       </el-container>
     </el-container>
@@ -23,132 +17,56 @@
 </template>
 
 <script>
-import CommonCard from "../components/CommonCard.vue"
+import MainAside from "../components/MainAside.vue";
+import MainHeader from "../components/MainHeader";
+import MainDetail from "../components/MainDetail";
 
 export default {
   name: 'home-view',
   components: {
-    CommonCard
+    // CommonCard
+    MainAside,
+    MainHeader,
+    MainDetail
+  },
+
+  methods: {
+
   },
 
   data() {
     return {
-      instructions: [
-        {
-          id: 12345678,
-          type: 1,
-          provinceNumber: 31,
-          resultNumber: 1231
-        },
 
-        {
-          id: 87654321,
-          type: 2,
-          provinceNumber: 31,
-          resultNumber: 563
-        },
-
-        {
-          id: 87654321,
-          type: 2,
-          provinceNumber: 31,
-          resultNumber: 52
-        },
-
-        {
-          id: 87654321,
-          type: 1,
-          provinceNumber: 30,
-          resultNumber: 77
-        },
-
-        {
-          id: 87654321,
-          type: 2,
-          provinceNumber: 31,
-          resultNumber: 1774
-        },
-
-        {
-          id: 87654321,
-          type: 2,
-          provinceNumber: 31,
-          resultNumber: 982
-        },
-
-        {
-          id: 87654321,
-          type: 1,
-          provinceNumber: 31,
-          resultNumber: 155
-        },
-
-        {
-          id: 87654321,
-          type: 2,
-          provinceNumber: 31,
-          resultNumber: 155
-        },
-
-        {
-          id: 87654321,
-          type: 1,
-          provinceNumber: 31,
-          resultNumber: 155
-        }
-      ]
     }
   }
 }
 </script>
 
 <style scoped>
-.home .el-header {
+#home  .el-header {
+  padding-left: 20px;
+  padding-top: 20px;
   color: #333;
   text-align: center;
-  line-height: 60px;
 }
 
-.home .el-aside {
+#home  .el-aside {
   padding: 5px;
-  margin: 10px;
+  margin: 20px;
   border: 0.5px solid #B3C0D1;
   border-radius: 4px;
   background-color: #fff;
   color: #000;
   text-align: center;
-
-  .card-title {
-    display: flex;
-    justify-content: space-between;
-    height: 20px;
-    line-height: 20px;
-    padding: 20px 0 10px;
-    font-size: 16px;
-
-    .title {
-      margin: 0 20px;
-      padding-left: 10px;
-      border-left: 3px solid #409EFF;
-    }
-
-    .number {
-      margin: 0 20px;
-    }
-  }
-
-  .card-body {
-    margin: 10px;
-  }
 }
 
-.home .el-main {
-  color: #333;
-  text-align: center;
-  line-height: 160px;
+#home  .el-main {
+  padding: 0;
+  margin: 20px;
+  margin-left: 0;
 }
 
-.home .el-container {
+#home  .el-container {
   height: 97vh;
 }
 
